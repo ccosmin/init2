@@ -23,4 +23,4 @@ Any signals sent to `init2` are now properly forwarded to `testsignal`
 ```
 CMD ["./init2", "echo", "__PATH"]
 ```
-Process `echo` will be launched and receive as argument the *contents* of the `PATH` env var. Using `${PATH}` here whould not expand to contents of the `PATH` env var since the shell is not used with the EXEC form.
+Process `echo` will be launched and receive as argument the *contents* of the `PATH` env var. Using `${PATH}` here would not expand to contents of the `PATH` env var since the shell is not used with the EXEC form.
